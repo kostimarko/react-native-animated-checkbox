@@ -1,10 +1,14 @@
-# react-native-animated-checkbox
+# rn-animated-checkbox
 
 An animated checkbox component for react native
 
 ## Install
 
-`npm i react-native-animated-checkbox`
+`npm i rn-animated-checkbox`
+
+or
+
+`yarn add rn-animated-checkbox`
 
 ## Lottie
 
@@ -15,7 +19,7 @@ This library depends on `lottie-react-native` to run the animations. [How to ins
 ```
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import AnimatedCheckbox from 'react-native-animated-checbox';
+import AnimatedCheckbox from 'rn-animated-checkbox';
 import Anim from './assets/notification.json';
 
 export default class App extends Component {
