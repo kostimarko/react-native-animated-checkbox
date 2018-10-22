@@ -4,7 +4,7 @@ An animated checkbox component for react native
 
 ## Install
 
-`npm i react-native-animated-checbox`
+`npm i react-native-animated-checkbox`
 
 ## Lottie
 
