@@ -3,14 +3,10 @@ import { TouchableWithoutFeedback, View, Text } from 'react-native';
 import LottieView from 'lottie-react-native';
 
 export default class AnimatedCheckbox extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.onPress = this.onPress.bind(this);
-  }
-  onPress() {
+  onPress = () => {
     this.props.onPress(!this.props.checked);
     this.animation.play();
-  }
+  };
   render() {
     const speed = this.props.checked ? 1 : -1;
     const progress = this.props.checked ? 1 : 0;
@@ -19,7 +15,9 @@ export default class AnimatedCheckbox extends PureComponent {
         <View style={{ width: this.props.width, height: this.props.height }}>
           <LottieView
             ref={animation => {
-              this.animation = animation;
+              if (animation) {
+                this.animation = animation;
+              }
             }}
             loop={false}
             source={this.props.Anim}
