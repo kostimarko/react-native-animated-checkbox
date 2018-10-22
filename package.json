@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-checbox",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "peerDependencies": {
     "lottie-react-native": "2.3.2",
     "react": "^16.3.0-alpha.1",
